@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio pessoal e profissional">
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#inicio">Meu<span>Portfólio</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav id="nav">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="hero-text">
+        <p class="eyebrow">OLÁ! SEJA BEM-VINDO(A)</p>
+        <h1>Olá, eu sou <span class="accent">Seu Nome</span></h1>
+        <h2>Estudante e desenvolvedor(a) em formação</h2>
+        <p class="intro">Gosto de aprender, criar projetos e transformar ideias em experiências digitais. Este é o meu espaço para apresentar um pouco do meu trabalho.</p>
+        <div class="actions">
+          <a class="button primary" href="#projetos">Ver meus projetos</a>
+          <a class="button secondary" href="#contato">Entrar em contato</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Ilustração abstrata de tecnologia">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="monogram">&lt;/&gt;</div>
+        <span class="float-tag tag-one">HTML</span><span class="float-tag tag-two">CSS</span><span class="float-tag tag-three">JS</span>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="section-heading"><p class="eyebrow">CONHEÇA-ME</p><h2>Sobre mim</h2></div>
+      <div class="about-card">
+        <p>Sou uma pessoa curiosa, dedicada e sempre disposta a aprender coisas novas. Tenho interesse em tecnologia, desenvolvimento web e criação de soluções úteis. Estou construindo minhas habilidades por meio de estudos e projetos práticos.</p>
+        <p>Meu objetivo é evoluir continuamente, colaborar com outras pessoas e criar trabalhos dos quais eu possa me orgulhar.</p>
+      </div>
+    </section>
+
+    <section class="section" id="habilidades">
+      <div class="section-heading"><p class="eyebrow">O QUE ESTOU APRENDENDO</p><h2>Minhas habilidades</h2></div>
+      <div class="skills-grid">
+        <article class="skill-card"><div class="skill-icon">🌐</div><h3>HTML</h3><p>Estrutura e organização de páginas web.</p></article>
+        <article class="skill-card"><div class="skill-icon">🎨</div><h3>CSS</h3><p>Estilização, cores, layouts e responsividade.</p></article>
+        <article class="skill-card"><div class="skill-icon">⚡</div><h3>JavaScript</h3><p>Interatividade e funcionalidades para sites.</p></article>
+        <article class="skill-card"><div class="skill-icon">💡</div><h3>Resolução de problemas</h3><p>Criatividade, pesquisa e aprendizado contínuo.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="projetos">
+      <div class="section-heading"><p class="eyebrow">MEU TRABALHO</p><h2>Projetos em destaque</h2><p class="section-description">Substitua os exemplos abaixo pelos seus projetos reais.</p></div>
+      <div class="projects-grid">
+        <article class="project-card"><div class="project-preview preview-purple"><span>01</span><strong>Meu primeiro site</strong></div><div class="project-info"><h3>Site pessoal</h3><p>Uma página para praticar estrutura HTML e estilos CSS.</p><div class="chips"><span>HTML</span><span>CSS</span></div><a href="#contato" class="project-link">Tenho interesse em apresentar →</a></div></article>
+        <article class="project-card"><div class="project-preview preview-blue"><span>02</span><strong>Projeto interativo</strong></div><div class="project-info"><h3>Aplicação JavaScript</h3><p>Um projeto para explorar interatividade e lógica de programação.</p><div class="chips"><span>JavaScript</span><span>Web</span></div><a href="#contato" class="project-link">Tenho interesse em apresentar →</a></div></article>
+        <article class="project-card"><div class="project-preview preview-orange"><span>03</span><strong>Nova ideia</strong></div><div class="project-info"><h3>Projeto em andamento</h3><p>Um espaço para mostrar um projeto que você esteja desenvolvendo.</p><div class="chips"><span>Estudo</span><span>Criatividade</span></div><a href="#contato" class="project-link">Tenho interesse em apresentar →</a></div></article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contato">
+      <div class="section-heading"><p class="eyebrow">VAMOS CONVERSAR</p><h2>Entre em contato</h2><p class="section-description">Quer conhecer meu trabalho ou trocar uma ideia? Envie uma mensagem.</p></div>
+      <form id="contactForm" class="contact-form">
+        <label for="name">Seu nome</label><input id="name" name="name" type="text" placeholder="Digite seu nome" required>
+        <label for="email">Seu e-mail</label><input id="email" name="email" type="email" placeholder="voce@exemplo.com" required>
+        <label for="message">Mensagem</label><textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+        <button class="button primary" type="submit">Preparar mensagem</button>
+        <p class="form-note" id="formNote">O formulário abrirá seu aplicativo de e-mail; configure o endereço no arquivo script.js.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer><a class="logo" href="#inicio">Meu<span>Portfólio</span></a><p>Feito com dedicação • <span id="year"></span></p><a href="#inicio" class="back-top">Voltar ao topo ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
